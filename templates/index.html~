@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            background-color: #EFEFEF;
+        }
+
+        h1 {
+            margin-bottom: 70px;
+            color: blue;
+        }
+
+        #main {
+            display: inline-block;
+            text-align: center;
+            border: 1px solid;
+            width: 500px;
+            height: 300px;
+            background-color: white;
+        }
+
+        span {
+            display: inline-block;
+            width: 120px;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+
+        .form-control input {
+            width: 200px;
+        }
+
+        .form-button {
+            width: 80px;
+        }
+
+    </style>
+ 
+</head>
+ 
+<body>
+    <form action="/login" method="POST">
+        <div id="main">
+            <h1>Please Login</h1>
+            <div class="form-control">
+                <span>Username:</span>
+                <input name="username" type="text"/>
+            </div>
+            <div class="form-control">
+                <span>Password:</span>
+                <input name="password" type="password"/>
+            </div>
+            <input class="form-button" type="submit" value="Login"/>
+            <input class="form-button" type="reset" value="Reset"/>
+        </div>
+    </form>
+</body>
+ 
+</html>
